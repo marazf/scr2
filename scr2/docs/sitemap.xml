@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>/404.html</loc>
+  </url>
+  <url>
+    <loc>/authors.html</loc>
+  </url>
+  <url>
+    <loc>/index.html</loc>
+  </url>
+  <url>
+    <loc>/reference/count_last_consecutive_signs.html</loc>
+  </url>
+  <url>
+    <loc>/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>/reference/number_consecutive_returns.html</loc>
+  </url>
+  <url>
+    <loc>/reference/prices_consecutive_returns.html</loc>
+  </url>
+  <url>
+    <loc>/reference/probability_consecutive_returns.html</loc>
+  </url>
+  <url>
+    <loc>/reference/probability_consecutive_returns_change.html</loc>
+  </url>
+  <url>
+    <loc>/reference/scr2.html</loc>
+  </url>
+</urlset>

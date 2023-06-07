@@ -1,0 +1,21 @@
+Package: scr2
+Type: Package
+Title: Signs of Consecutive Returns
+Version: 0.1.1
+Date: 2023-06-01
+Authors@R: c(person("Andrea", "Buzzetti", email = "andrea.buzzetti@usi.ch", role = c("aut")), 
+           person("Giacomo", "Gambaretti", email = "giacomo.gambaretti@usi.ch", role = c("aut")),
+           person("Francesco", "Marazza", email = "francesco.marazza@usi.ch", role = c("cre", "aut")), 
+           person("Sara", "Vurdelja", email = "sara.vurdelja@usi.ch", role = c("aut", "maintainer")))
+Description: Number or percentage of consecutive returns with the same sign according to historical data.
+Imports: quantmod, xts, zoo
+License: GPL-2
+URL: https://github.com/marazf/scr2
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Repository: GitHub
