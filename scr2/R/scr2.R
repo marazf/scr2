@@ -1,0 +1,24 @@
+#' Signs of Consecutive Returns
+#'
+#' Number or percentage of consecutive returns with the same sign according to historical data.
+#'
+#' @docType package
+#' @name scr2
+#' @aliases scr2
+#' @import quantmod stats xts zoo
+#' @author Andrea Buzzetti, Giacomo Gambaretti, Francesco Marazza, Sara Vurdelja
+#' @section Help Pages:
+#'   \itemize{
+#'     \item \code{\link{number_consecutive_returns}}: This function computes the number
+#'     consecutive strictly positive or negative returns for a given stock.
+#'     \item \code{\link{count_last_consecutive_signs}}: This function computes the number of
+#'     last consecutive strictly positive or negative returns for a given stock.
+#'     \item \code{\link{probability_consecutive_returns}}: This function computes the probability
+#'     of consecutive strictly positive or negative returns for a given stock.
+#'     \item \code{\link{prices_consecutive_returns}}: This function computes the stock price
+#'     when consecutive strictly positive or negative returns occur.
+#'     \item \code{\link{probability_consecutive_returns_change}}: This function computes the
+#'     probability of having a change in sign after n consecutive returns of the same sign for a
+#'     given stock.
+#' }
+NULL

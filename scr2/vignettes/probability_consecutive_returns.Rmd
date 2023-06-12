@@ -1,0 +1,42 @@
+---
+title: "probability_consecutive_returns"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{probability_consecutive_returns}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(scr2)
+```
+
+
+## Parameters
+
+Parameters for the Probability_consecutive_returns() function:
+
+- n: This represents the number of consecutive returns of interest. For example, if you set n = 3, the function will compute the historical probability of the selected stock experiencing 3 consecutive positive or negative returns.
+
+- ticker: This is the ticker symbol of a stock of your choice.
+
+- start and end: These define the time period for the analysis. The function will only consider returns that occurred between these dates.
+
+- frequency: This parameter represents the frequency of returns to consider. For example, if frequency = "daily", the function will compute the probability based on daily returns.
+
+- positive: This parameter determines whether the function should consider positive or negative returns. If positive = TRUE, the function will compute the probability of consecutive positive returns; if positive = FALSE, it will compute the probability of consecutive negative returns.
+
+## Usage
+
+esempio codice
+
+The Probability_consecutive_returns() function provides the historical probability of consecutive positive or negative returns, it allows to gain insights into the potential future performance of a stock.
+
+For example, a high probability of consecutive positive returns could be an indicator of a strong stock, whereas a high probability of consecutive negative returns could indicate riskier investments.

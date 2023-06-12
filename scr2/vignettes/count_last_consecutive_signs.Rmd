@@ -1,0 +1,36 @@
+---
+title: "count_last_consecutive_signs"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{count_last_consecutive_signs}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(scr2)
+```
+
+## Parameters
+Count_last_consecutive_signs() function holds the following parameters:
+
+- ticker: This is the ticker symbol for a stock.
+
+- start and end: These parameters set the time frame for the analysis. The function will only consider returns within this period.
+
+- frequency: This parameter allows to specify the frequency of returns. For example, if you set frequency = "daily", the function will consider daily returns.
+
+## Usage
+
+Inserire esempio qualunque codice
+
+The Count_last_consecutive_signs() function provides insight into the most recent trend of a stock. If the function returns a high number, this indicates that the stock has had a series of consecutive returns with the same sign, suggesting a strong current upward or downward trend.
+
+For example, if the last returns up until the end of the period are ordered as follows: positive, negative, negative, and negative, the output will be 3, as there are three last returns with the same (negative) sign.

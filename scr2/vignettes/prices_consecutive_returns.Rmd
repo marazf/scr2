@@ -1,0 +1,43 @@
+---
+title: "prices_consecutive_returns"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{prices_consecutive_returns}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(scr2)
+```
+
+
+## Parameters
+
+Parameters accepted by Prices_consecutive_returns():
+
+- n: This parameter defines the number of consecutive returns of interest. For example, setting n = 3 will prompt the function to identify occurrences where the selected stock had 3 consecutive positive or negative returns.
+
+- ticker: This is the ticker symbol of a stock of your choice.
+
+- start and end: These parameters set the time horizon for the analysis. The function will only consider returns that fell within this time-frame.
+
+- frequency: This parameter lets you set the frequency of returns that should be taken into account. For instance, with frequency = "daily", the function will consider daily returns.
+
+- positive: This parameter determines whether the function should consider positive or negative returns. Setting positive = TRUE will cause the function to look for instances of consecutive positive returns, whereas positive = FALSE will make it look for instances of consecutive negative returns.
+
+
+## Usage
+
+codice esempio
+
+The Prices_consecutive_returns() function allows to align the occurrence of consecutive returns of the same sign with the corresponding rounded stock prices. This can provide insights into the price levels that are associated with runs of positive or negative returns, helping to identify key price thresholds or resistance levels.
+
+For example, if the function returns a set of prices that were associated with multiple occurrences of 3 consecutive positive returns, this might suggest that these price levels have historically been followed by sustained growth, which could be informative for future investment decisions.

@@ -1,0 +1,43 @@
+---
+title: "probability_consecutive_returns_change"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{probability_consecutive_returns_change}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(scr2)
+```
+
+## Parameters
+
+Parameters for the Probability_consecutive_returns_change() function:
+
+- n: This parameter represents the number of consecutive returns of interest. For example, if n = 3, the function will compute the historical probability of the selected stock experiencing a change of sign after 3 consecutive positive or negative returns.
+
+- ticker: This is the ticker symbol of a stock of your choice.
+
+- start and end: These parameters set the time horizon for your analysis. The function will only consider returns that happened within this time period.
+
+- frequency: This parameter represents the frequency of returns that should be considered. For example, if frequency = "daily", the function will calculate the probability based on daily returns.
+
+- positive: This parameter determines whether the function should consider positive or negative returns. If positive = TRUE, the function will compute the probability of a sign change after consecutive positive returns; if positive = FALSE, it will compute the probability of a sign change after consecutive negative returns.
+
+
+
+## Usage
+
+esempio codice
+
+The Probability_consecutive_returns_change() function provides the historical probability of a change in sign after consecutive positive or negative returns, it allows to gain insights into the potential volatility and reversals in a stock's performance.
+
+For example, a high probability of sign change after consecutive positive returns could be an indicator of a stock's historical volatility, suggesting that periods of growth are often followed by periods of decline. On the other hand, a low probability could indicate more stable trends.

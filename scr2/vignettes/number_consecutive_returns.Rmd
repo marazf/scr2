@@ -1,0 +1,42 @@
+---
+title: "number_consecutive_returns"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{number_consecutive_returns}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(scr2)
+```
+
+
+## Parameters
+
+Parameters accepted by Number_consecutive_returns():
+
+- n: This parameter represents the number of consecutive returns of interest. For example, if n = 3, the function will look for occurrences where the stock had 3 consecutive positive or negative returns.
+
+- ticker: This is the ticker symbol of a stock of your choice.
+
+- start and end: These parameters define the time horizon for the analysis. The function will only consider returns that occurred between these dates.
+
+- frequency: This parameter represents the frequency of returns that should be considered. For instance, if frequency = "daily", the function will consider daily returns.
+
+- positive: This parameter determines whether the function should count positive or negative returns. If positive = TRUE, the function will count consecutive positive returns; if positive = FALSE, it will count consecutive negative returns.
+
+## Usage
+
+esempio codice
+
+The Number_consecutive_returns() function can be used to look for historical patterns of a stock's returns and analyze market behavior over the chosen time-frame. For example, a high number of consecutive positive returns could suggest a strong bullish trend, while a high number of consecutive negative returns could indicate a bearish trend.
+
+By adjusting the parameters, you can customize the function to suit your analytical needs. For instance, you can set n to track long streaks of returns or change frequency to analyze weekly or monthly returns instead of daily returns.
